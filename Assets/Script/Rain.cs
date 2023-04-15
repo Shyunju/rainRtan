@@ -14,7 +14,7 @@ public class Rain : MonoBehaviour
         float y = Random.Range(4f, 5f);
         transform.position = new Vector3(x, y, 0);
 
-        type = Random.Range(1, 4); //4는 포함되지 않음
+        type = Random.Range(1, 5); //5는 포함되지 않음
 
         if (type == 1)
         {
@@ -28,6 +28,12 @@ public class Rain : MonoBehaviour
             size = 1.0f;
             score = 2;
             GetComponent<SpriteRenderer>().color = new Color(130 / 255f, 130 / 255f, 255 / 255f, 255 / 255f);
+        }
+        else if (type == 3)
+        {
+            size = 0.8f;
+            score = -5;
+            GetComponent<SpriteRenderer>().color = new Color(255 / 255.0f, 100.0f / 255.0f, 100.0f / 255.0f, 255.0f / 255.0f);
         }
         else
         {

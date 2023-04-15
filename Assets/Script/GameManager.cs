@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public Text scoreAText;
     public Text timeText;
     int totalScore =0;
-    float limit = 5f;
+    float limit = 60f;
     public GameObject panel;
 
     private void Awake()
@@ -57,6 +57,6 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         totalScore = 0;
-        limit = 5f;
+        limit = 60f;
     }
 }
